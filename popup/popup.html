@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="../shared/design-system.css">
+</head>
+<body data-theme="instagram" data-kit="instagram">
+  <div class="popup">
+    <header class="popup-header">
+      <img src="../icons/icon48.png" width="30" height="30" alt="" class="popup-icon">
+      <div class="popup-header-text">
+        <h1 id="app-title">Instagram 下载助手</h1>
+        <span id="app-version" class="popup-version"></span>
+      </div>
+    </header>
+    <main class="popup-body">
+      <section class="popup-intro" aria-labelledby="guide-title">
+        <span id="page-status" class="popup-status">使用说明</span>
+        <h2 id="guide-title">在 Instagram 页面下载内容</h2>
+        <p id="guide-lead">首页帖子、内容详情和创作者主页均可下载。</p>
+      </section>
+      <ol class="popup-steps" aria-label="下载步骤">
+        <li class="popup-step"><span class="popup-step-num">1</span><span id="step-open" class="popup-step-text">浏览首页帖子，或打开帖子详情、Reel、Story、创作者主页</span></li>
+        <li class="popup-step"><span class="popup-step-num">2</span><span id="step-entry" class="popup-step-text">在详情页或创作者主页点击右侧入口；首页信息流点击帖子旁“下载”</span></li>
+        <li class="popup-step"><span class="popup-step-num">3</span><span id="step-download" class="popup-step-text">在“当前内容”或“创作者”标签中选择内容并下载</span></li>
+      </ol>
+      <div class="popup-note" role="note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5M12 8h.01"></path></svg>
+        <p id="detail-note">首页支持逐帖下载。默认隐藏首页广告，可在设置中关闭；详情页和创作者主页提供常驻入口。</p>
+      </div>
+      <a id="btn-go-site" class="popup-btn" href="https://www.instagram.com/" target="_blank" rel="noopener">打开 Instagram</a>
+    </main>
+    <footer class="popup-footer">
+      <nav class="popup-footer-links" aria-label="帮助链接">
+        <a class="popup-footer-link" href="https://snowflake-hangdudu.github.io/ins-downloader/faq.html" target="_blank" rel="noopener">常见问题</a><span class="popup-footer-sep" aria-hidden="true">·</span><a class="popup-footer-link" href="https://snowflake-hangdudu.github.io/ins-downloader/" target="_blank" rel="noopener">隐私政策</a>
+      </nav>
+      <div class="popup-footer-line"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span id="disclaimer">仅供个人学习 · 请遵守 Instagram 使用条款</span></div>
+    </footer>
+  </div>
+  <script src="popup-config.js"></script>
+  <script src="../shared/runtime.js"></script>
+  <script src="../shared/theme.js"></script>
+  <script src="../shared/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
